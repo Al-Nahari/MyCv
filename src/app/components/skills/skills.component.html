@@ -6,11 +6,11 @@
     </div>
 
     <div class="skills-grid">
-      @for (category of skills | keyvalue; track category.key) {
+      @for (group of skills; track group.category) {
         <div class="skill-category">
-          <h3 class="category-name">{{ category.key }}</h3>
+          <h3 class="category-name">{{ group.category }}</h3>
           <div class="skill-tags">
-            @for (skill of category.value; track skill) {
+            @for (skill of group.items; track skill) {
               <span class="skill-tag">{{ skill }}</span>
             }
           </div>

@@ -9,16 +9,16 @@ import { Component } from '@angular/core';
 export class SkillsComponent {
   readonly categoryTitle = 'Technical Skills';
 
-  readonly skills = {
-    'Programming Languages': ['Python', 'TypeScript', 'JavaScript', 'Dart'],
-    'Frontend': ['Angular', 'Next.js', 'HTML5', 'CSS3', 'SCSS', 'Responsive Design'],
-    'Backend': ['Django', 'FastAPI', 'REST APIs', 'GraphQL', 'Authentication', 'WebSockets'],
-    'Mobile': ['Flutter', 'Dart', 'iOS', 'Android', 'Cross-Platform'],
-    'Databases': ['PostgreSQL', 'MySQL', 'SQLite', 'Database Design', 'Query Optimization'],
-    'DevOps & Tools': ['Docker', 'CI/CD', 'Linux', 'Nginx', 'AWS', 'GitHub Actions'],
-    'Version Control': ['Git', 'GitHub', 'GitFlow', 'Code Review'],
-    'Software Architecture': ['Clean Architecture', 'Microservices', 'API Design', 'System Design'],
-  };
+  readonly skills: { category: string; items: string[] }[] = [
+    { category: 'Programming Languages', items: ['Python', 'TypeScript', 'JavaScript', 'Dart'] },
+    { category: 'Frontend', items: ['Angular', 'Next.js', 'HTML5', 'CSS3', 'SCSS', 'Responsive Design'] },
+    { category: 'Backend', items: ['Django', 'FastAPI', 'REST APIs', 'GraphQL', 'Authentication', 'WebSockets'] },
+    { category: 'Mobile', items: ['Flutter', 'Dart', 'iOS', 'Android', 'Cross-Platform'] },
+    { category: 'Databases', items: ['PostgreSQL', 'MySQL', 'SQLite', 'Database Design', 'Query Optimization'] },
+    { category: 'DevOps & Tools', items: ['Docker', 'CI/CD', 'Linux', 'Nginx', 'AWS', 'GitHub Actions'] },
+    { category: 'Version Control', items: ['Git', 'GitHub', 'GitFlow', 'Code Review'] },
+    { category: 'Software Architecture', items: ['Clean Architecture', 'Microservices', 'API Design', 'System Design'] },
+  ];
 
   readonly softSkills = [
     'Problem Solving',
