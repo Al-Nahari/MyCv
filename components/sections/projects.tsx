@@ -55,7 +55,7 @@ const projects = [
   },
 ]
 
-function ProjectCard({ project, index, isActive, onClick }: { project: typeof projects[0]; index: number; isActive: boolean; onClick: () => void }) {
+function ProjectCard({ project, index, isActive, onClick, key }: { project: typeof projects[0]; index: number; isActive: boolean; onClick: () => void; key?: React.Key }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -95,7 +95,7 @@ function ProjectCard({ project, index, isActive, onClick }: { project: typeof pr
           href={project.liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={(e) => e.stopPropagation()}
+          onClick={(e: React.MouseEvent) => e.stopPropagation()}
           className="inline-flex items-center gap-2 text-sm font-semibold text-[#fafafa] hover:text-[#3b82f6] transition-colors"
         >
           <ExternalLink size={16} />
@@ -105,7 +105,7 @@ function ProjectCard({ project, index, isActive, onClick }: { project: typeof pr
           href={project.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={(e) => e.stopPropagation()}
+          onClick={(e: React.MouseEvent) => e.stopPropagation()}
           className="inline-flex items-center gap-2 text-sm font-semibold text-[#fafafa] hover:text-[#3b82f6] transition-colors"
         >
           <Github size={16} />
