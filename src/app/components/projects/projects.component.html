@@ -1,0 +1,52 @@
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Projects</span>
+      <h2 class="section-title">Featured Work</h2>
+      <p class="section-subtitle">A selection of projects that showcase my technical range and problem-solving ability.</p>
+    </div>
+
+    <div class="projects-grid">
+      @for (project of projects; track project.name) {
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <h3 class="project-name">{{ project.name }}</h3>
+              @if (project.url) {
+                <a [href]="project.url" target="_blank" rel="noopener" class="project-link">
+                  {{ project.url }} &nearr;
+                </a>
+              }
+            </div>
+          </div>
+          <p class="project-description">{{ project.description }}</p>
+          <div class="project-details">
+            <div class="project-detail">
+              <span class="detail-label">Problem</span>
+              <p>{{ project.problem }}</p>
+            </div>
+            <div class="project-detail">
+              <span class="detail-label">Solution</span>
+              <p>{{ project.solution }}</p>
+            </div>
+          </div>
+          <div class="project-features">
+            @for (feature of project.features; track feature) {
+              <span class="feature-tag">{{ feature }}</span>
+            }
+          </div>
+          <div class="project-footer">
+            <div class="project-tech">
+              @for (tech of project.technologies; track tech) {
+                <span class="tech-chip">{{ tech }}</span>
+              }
+            </div>
+          </div>
+          <div class="project-results">
+            <strong>Results:</strong> {{ project.results }}
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

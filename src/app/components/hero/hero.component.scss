@@ -1,0 +1,131 @@
+.hero {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+  margin: 0 0 1.5rem;
+  letter-spacing: -0.03em;
+}
+
+.hero-accent {
+  color: #2563eb;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.125rem, 2vh, 1.5rem);
+  color: #475569;
+  max-width: 700px;
+  margin: 0 auto 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: #64748b;
+  max-width: 650px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+.btn-secondary:hover {
+  background: #eff6ff;
+  transform: translateY(-2px);
+}
+
+.hero-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.tech-pill {
+  padding: 0.375rem 1rem;
+  background: rgba(15, 23, 42, 0.05);
+  color: #334155;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+}
