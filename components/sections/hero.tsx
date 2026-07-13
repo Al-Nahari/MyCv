@@ -1,9 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ChevronRight, Code2, Sparkles, Zap } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
+import { techPills } from '@/lib/data'
+import type { Dictionary } from '@/lib/i18n/en'
 
-export default function Hero() {
+export default function Hero({ dict }: { dict: Dictionary['hero'] }) {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -24,21 +26,8 @@ export default function Hero() {
     },
   }
 
-  const techPills = [
-    { label: 'Next.js', color: 'from-blue-500 to-cyan-500' },
-    { label: 'Angular', color: 'from-red-500 to-rose-500' },
-    { label: 'Django', color: 'from-green-600 to-emerald-500' },
-    { label: 'FastAPI', color: 'from-teal-500 to-cyan-500' },
-    { label: 'Flutter', color: 'from-sky-500 to-blue-500' },
-    { label: 'TypeScript', color: 'from-blue-600 to-indigo-500' },
-    { label: 'Python', color: 'from-yellow-500 to-orange-500' },
-    { label: 'PostgreSQL', color: 'from-indigo-500 to-purple-500' },
-    { label: 'Docker', color: 'from-blue-400 to-indigo-500' },
-    { label: 'AWS', color: 'from-orange-400 to-yellow-500' },
-  ]
-
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0 gradient-mesh" />
       <div className="absolute inset-0 grid-bg opacity-40" />
 
@@ -50,26 +39,26 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
               </span>
-              Available for new opportunities
+              {dict.badge}
             </span>
           </motion.div>
 
-          <motion.h1 variants={itemVariants} className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 font-[family-name:var(--font-space-grotesk)] leading-[0.95]">
-            <span className="block">Mohammed</span>
-            <span className="block gradient-text">Al-Nahari</span>
+          <motion.h1 variants={itemVariants} className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-6 font-[family-name:var(--font-space-grotesk)] leading-[0.95]">
+            <span className="block">{dict.firstName}</span>
+            <span className="block gradient-text">{dict.lastName}</span>
           </motion.h1>
 
           <motion.p variants={itemVariants} className="text-lg md:text-xl text-[#a1a1aa] max-w-3xl mb-8 text-balance">
-            IT Engineer & Full-Stack/Mobile Developer specializing in Next.js, Angular, Django, FastAPI, and Flutter. I build scalable, high-performance applications that solve real business problems.
+            {dict.subtitle}
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center gap-4 mb-16">
             <a href="#projects" className="magnetic-btn flex items-center gap-2">
-              View My Work
+              {dict.ctaPrimary}
               <ChevronRight size={18} />
             </a>
             <a href="#contact" className="outline-btn flex items-center gap-2">
-              Hire Me
+              {dict.ctaSecondary}
             </a>
           </motion.div>
 

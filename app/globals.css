@@ -4,22 +4,22 @@
 
 @layer base {
   :root {
-    --background: #09090B;
+    --background: #0a0510;
     --foreground: #fafafa;
-    --surface: #111111;
-    --primary: #3b82f6;
+    --surface: #150c22;
+    --primary: #ff5f6d;
     --primary-foreground: #fafafa;
-    --secondary: #8b5cf6;
+    --secondary: #a855f7;
     --secondary-foreground: #fafafa;
     --muted: #71717a;
     --muted-foreground: #a1a1aa;
-    --accent: #06b6d4;
+    --accent: #ff8a00;
     --accent-foreground: #fafafa;
-    --card: #111111;
+    --card: #150c22;
     --card-foreground: #fafafa;
     --border: rgba(255, 255, 255, 0.08);
-    --ring: #3b82f6;
-    --radius: 1rem;
+    --ring: #ff5f6d;
+    --radius: 1.25rem;
   }
 }
 
@@ -28,23 +28,23 @@
     @apply border-[rgba(255,255,255,0.08)];
   }
   body {
-    @apply bg-[#09090B] text-[#fafafa] antialiased overflow-x-hidden;
+    @apply bg-[#0a0510] text-[#fafafa] antialiased overflow-x-hidden;
     font-family: var(--font-inter), system-ui, sans-serif;
   }
   html {
     scroll-behavior: smooth;
   }
   ::selection {
-    @apply bg-[#3b82f6]/30 text-[#fafafa];
+    @apply bg-[#ff5f6d]/30 text-[#fafafa];
   }
 }
 
 @layer components {
   .glass-card {
-    @apply bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.08)] backdrop-blur-xl;
+    @apply bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] backdrop-blur-xl;
   }
   .gradient-text {
-    @apply bg-gradient-to-r from-[#3b82f6] via-[#8b5cf6] to-[#3b82f6] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#ff5f6d] via-[#a855f7] to-[#ff8a00] bg-clip-text text-transparent;
   }
   .gradient-border {
     position: relative;
@@ -56,7 +56,7 @@
     inset: 0;
     padding: 1px;
     border-radius: inherit;
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+    background: linear-gradient(135deg, #ff5f6d, #a855f7, #ff8a00);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -68,31 +68,34 @@
     opacity: 1;
   }
   .magnetic-btn {
-    @apply inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-full transition-all duration-300 cursor-pointer border-0;
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    @apply inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-full transition-all duration-300 cursor-pointer border-0;
+    background: linear-gradient(135deg, #ff5f6d, #a855f7, #ff8a00);
+    background-size: 200% 200%;
+    background-position: 0% 50%;
     color: #fafafa;
   }
   .magnetic-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+    transform: translateY(-3px) scale(1.02);
+    background-position: 100% 50%;
+    box-shadow: 0 20px 45px rgba(255, 95, 109, 0.35);
   }
   .outline-btn {
-    @apply inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-full transition-all duration-300 cursor-pointer border border-[rgba(255,255,255,0.2)] bg-transparent text-[#fafafa];
+    @apply inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-full transition-all duration-300 cursor-pointer border-2 border-[rgba(255,255,255,0.25)] bg-transparent text-[#fafafa];
   }
   .outline-btn:hover {
-    border-color: #3b82f6;
-    background: rgba(59, 130, 246, 0.1);
-    transform: translateY(-2px);
+    border-color: #ff5f6d;
+    background: rgba(255, 95, 109, 0.1);
+    transform: translateY(-3px);
   }
   .section-title {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
+    @apply text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight;
     font-family: var(--font-space-grotesk), sans-serif;
   }
   .section-label {
-    @apply text-sm font-medium uppercase tracking-widest text-[#3b82f6] mb-4;
+    @apply inline-block text-sm font-bold uppercase tracking-[0.2em] gradient-text mb-4;
   }
   .nav-link {
-    @apply text-[#a1a1aa] hover:text-[#fafafa] transition-colors duration-200 text-sm;
+    @apply text-[#a1a1aa] hover:text-[#fafafa] transition-colors duration-200 text-sm font-medium;
   }
 }
 
@@ -102,9 +105,9 @@
   }
   .gradient-mesh {
     background:
-      radial-gradient(ellipse at 20% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
-      radial-gradient(ellipse at 80% 20%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
-      radial-gradient(ellipse at 40% 80%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
+      radial-gradient(ellipse at 20% 50%, rgba(255, 95, 109, 0.22) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, rgba(168, 85, 247, 0.18) 0%, transparent 50%),
+      radial-gradient(ellipse at 40% 80%, rgba(255, 138, 0, 0.14) 0%, transparent 50%);
   }
   .grid-bg {
     background-image:
