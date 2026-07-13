@@ -22,7 +22,7 @@ export default function Footer() {
               Navigation
             </h4>
             <div className="flex flex-col gap-3">
-              {['About', 'Projects', 'Skills', 'Experience', 'Contact'].map((item) => (
+              {['About', 'Services', 'Projects', 'Skills', 'Experience', 'Education', 'Contact'].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}

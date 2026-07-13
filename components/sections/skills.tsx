@@ -15,45 +15,46 @@ const categories = [
     name: 'Frontend',
     icon: Globe,
     color: 'from-cyan-500 to-blue-500',
-    skills: ['React', 'Next.js', 'Vue.js', 'Tailwind CSS', 'Redux', 'Framer Motion'],
+    skills: ['Next.js', 'Angular', 'React', 'Tailwind CSS', 'Redux', 'RxJS'],
   },
   {
     name: 'Backend',
     icon: Server,
     color: 'from-purple-500 to-indigo-500',
-    skills: ['Node.js', 'Express', 'NestJS', 'GraphQL', 'REST APIs'],
+    skills: ['Django', 'Django REST Framework', 'FastAPI', 'Node.js', 'Express', 'REST APIs', 'GraphQL'],
   },
   {
     name: 'Mobile',
     icon: Smartphone,
     color: 'from-emerald-500 to-cyan-500',
-    skills: ['React Native', 'Expo', 'Flutter', 'iOS', 'Android'],
+    skills: ['Flutter', 'Angular', 'React Native', 'Expo', 'iOS', 'Android'],
   },
   {
     name: 'Databases',
     icon: Database,
     color: 'from-orange-500 to-red-500',
-    skills: ['PostgreSQL', 'MongoDB', 'Redis', 'MySQL', 'Prisma'],
+    skills: ['PostgreSQL', 'MySQL', 'SQLite', 'MongoDB', 'Redis', 'Prisma'],
   },
   {
-    name: 'DevOps',
+    name: 'DevOps & Tools',
     icon: Cloud,
     color: 'from-blue-500 to-indigo-500',
-    skills: ['Docker', 'AWS', 'CI/CD', 'GitHub Actions', 'Vercel'],
+    skills: ['Docker', 'Docker Compose', 'Git', 'GitHub', 'CI/CD', 'GitHub Actions', 'Vercel', 'AWS'],
   },
   {
     name: 'Architecture',
     icon: Layers,
     color: 'from-pink-500 to-rose-500',
-    skills: ['Microservices', 'Monorepo', 'Clean Architecture', 'Design Systems', 'API Design'],
+    skills: ['Microservices', 'Clean Architecture', 'Design Systems', 'API Design', 'Monorepo'],
   },
 ]
 
 const allSkills = [
-  'TypeScript', 'JavaScript', 'React', 'Next.js', 'Node.js', 'React Native', 'PostgreSQL',
-  'MongoDB', 'Docker', 'AWS', 'Tailwind CSS', 'GraphQL', 'Python', 'Redis', 'Prisma',
-  'Vue.js', 'Express', 'NestJS', 'GraphQL', 'REST APIs', 'Flutter', 'iOS', 'Android',
-  'Expo', 'CI/CD', 'GitHub Actions', 'Vercel', 'Clean Architecture', 'Microservices'
+  'TypeScript', 'JavaScript', 'Python', 'SQL', 'Dart', 'Next.js', 'Angular', 'React', 'Django',
+  'Django REST Framework', 'FastAPI', 'Node.js', 'Express', 'Flutter', 'React Native', 'Expo',
+  'PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Docker', 'Docker Compose', 'Git', 'GitHub',
+  'CI/CD', 'GitHub Actions', 'Vercel', 'AWS', 'Tailwind CSS', 'Prisma', 'RxJS', 'Redux',
+  'REST APIs', 'GraphQL', 'Clean Architecture', 'Microservices'
 ]
 
 function SkillCloud() {

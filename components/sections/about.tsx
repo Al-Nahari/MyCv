@@ -19,19 +19,19 @@ export default function About() {
     {
       icon: Code2,
       title: 'Full-Stack Expertise',
-      description: 'Proficient in Next.js, React, Node.js, and modern TypeScript architectures.',
+      description: 'Building robust backend systems with Django & FastAPI, and modern frontends with Next.js and Angular. Proficient in TypeScript and Python ecosystems.',
       gradient: 'from-blue-500 to-cyan-500',
     },
     {
       icon: Rocket,
-      title: 'Mobile Development',
-      description: 'Building cross-platform mobile apps with React Native and Expo.',
+      title: 'Cross-Platform Mobile',
+      description: 'Developing high-performance mobile experiences with Flutter and Angular, delivering apps that feel native on any device.',
       gradient: 'from-purple-500 to-pink-500',
     },
     {
       icon: Users,
       title: 'Production Ready',
-      description: 'Deployed live applications serving real users, including mazalat-riyadh.com.',
+      description: 'Delivered production-ready solutions including mazalat-riyadh.com — a live business platform built with Next.js serving real users.',
       gradient: 'from-emerald-500 to-cyan-500',
     },
   ]
@@ -47,9 +47,9 @@ export default function About() {
           className="mb-20"
         >
           <span className="section-label">About Me</span>
-          <h2 className="section-title mb-6">Building the future,<br />one pixel at a time</h2>
+          <h2 className="section-title mb-6">Engineer who ships<br />real products</h2>
           <p className="text-[#a1a1aa] text-lg max-w-3xl leading-relaxed">
-            I&apos;m Mohammed Al-Nahari, an IT Engineer with a passion for crafting exceptional digital experiences. Specializing in full-stack web development and mobile applications, I bring ideas to life with clean, performant code and thoughtful design.
+            I&apos;m Mohammed Al-Nahari, an Information Technology Engineer based in Riyadh, Saudi Arabia. I specialize in building full-stack web applications, REST APIs, and cross-platform mobile apps. From Django and FastAPI backends to Next.js and Angular frontends, and Flutter mobile apps — I deliver end-to-end solutions that are scalable, maintainable, and production-ready.
           </p>
         </motion.div>
 

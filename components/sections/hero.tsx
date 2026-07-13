@@ -26,13 +26,15 @@ export default function Hero() {
 
   const techPills = [
     { label: 'Next.js', color: 'from-blue-500 to-cyan-500' },
-    { label: 'React', color: 'from-cyan-400 to-blue-500' },
+    { label: 'Angular', color: 'from-red-500 to-rose-500' },
+    { label: 'Django', color: 'from-green-600 to-emerald-500' },
+    { label: 'FastAPI', color: 'from-teal-500 to-cyan-500' },
+    { label: 'Flutter', color: 'from-sky-500 to-blue-500' },
     { label: 'TypeScript', color: 'from-blue-600 to-indigo-500' },
-    { label: 'React Native', color: 'from-indigo-500 to-purple-500' },
-    { label: 'Node.js', color: 'from-emerald-500 to-cyan-500' },
-    { label: 'PostgreSQL', color: 'from-blue-500 to-purple-500' },
-    { label: 'AWS', color: 'from-orange-400 to-yellow-500' },
+    { label: 'Python', color: 'from-yellow-500 to-orange-500' },
+    { label: 'PostgreSQL', color: 'from-indigo-500 to-purple-500' },
     { label: 'Docker', color: 'from-blue-400 to-indigo-500' },
+    { label: 'AWS', color: 'from-orange-400 to-yellow-500' },
   ]
 
   return (
@@ -57,17 +59,17 @@ export default function Hero() {
             <span className="block gradient-text">Al-Nahari</span>
           </motion.h1>
 
-          <motion.p variants={itemVariants} className="text-lg md:text-xl text-[#a1a1aa] max-w-2xl mb-8 text-balance">
-            IT Engineer & Full-Stack/Mobile Developer building performant, scalable web and mobile applications with modern technologies.
+          <motion.p variants={itemVariants} className="text-lg md:text-xl text-[#a1a1aa] max-w-3xl mb-8 text-balance">
+            IT Engineer & Full-Stack/Mobile Developer specializing in Next.js, Angular, Django, FastAPI, and Flutter. I build scalable, high-performance applications that solve real business problems.
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center gap-4 mb-16">
             <a href="#projects" className="magnetic-btn flex items-center gap-2">
-              View Work
+              View My Work
               <ChevronRight size={18} />
             </a>
             <a href="#contact" className="outline-btn flex items-center gap-2">
-              Get in Touch
+              Hire Me
             </a>
           </motion.div>
 
