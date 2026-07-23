@@ -25,20 +25,20 @@ export default function Footer({ dict, navDict }: { dict: Dictionary['footer']; 
   ]
 
   return (
-    <footer className="relative border-t border-[rgba(255,255,255,0.06)] bg-[#0a0510]">
+    <footer className="relative border-t border-[rgba(255,255,255,0.06)] bg-[#05070d]">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           <div>
             <h3 className="text-2xl font-extrabold font-[family-name:var(--font-space-grotesk)] gradient-text mb-4">
               Mohammed Al-Nahari
             </h3>
-            <p className="text-[#a1a1aa] text-sm leading-relaxed max-w-xs">
+            <p className="text-[#93a0b8] text-sm leading-relaxed max-w-xs">
               {dict.tagline}
             </p>
           </div>
 
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-widest text-[#71717a] mb-4">
+            <h4 className="text-sm font-bold uppercase tracking-widest text-[#5b6478] mb-4">
               {dict.navTitle}
             </h4>
             <div className="flex flex-col gap-3">
@@ -46,7 +46,7 @@ export default function Footer({ dict, navDict }: { dict: Dictionary['footer']; 
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-[#a1a1aa] hover:text-[#fafafa] transition-colors text-sm"
+                  className="text-[#93a0b8] hover:text-[#eef2fb] transition-colors text-sm"
                 >
                   {item.label}
                 </a>
@@ -55,7 +55,7 @@ export default function Footer({ dict, navDict }: { dict: Dictionary['footer']; 
           </div>
 
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-widest text-[#71717a] mb-4">
+            <h4 className="text-sm font-bold uppercase tracking-widest text-[#5b6478] mb-4">
               {dict.connectTitle}
             </h4>
             <div className="flex flex-col gap-3">
@@ -70,12 +70,12 @@ export default function Footer({ dict, navDict }: { dict: Dictionary['footer']; 
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-[rgba(255,255,255,0.06)]">
-          <p className="text-[#71717a] text-sm">
+          <p className="text-[#5b6478] text-sm">
             &copy; {currentYear} Mohammed Al-Nahari. {dict.rights}
           </p>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="p-3 rounded-full border border-[rgba(255,255,255,0.1)] hover:border-[#ff5f6d] hover:bg-[rgba(255,95,109,0.1)] transition-all duration-300"
+            className="p-3 rounded-full border border-[rgba(255,255,255,0.1)] hover:border-[#3e7bfa] hover:bg-[rgba(62,123,250,0.1)] transition-all duration-300"
             aria-label="Scroll to top"
           >
             <ArrowUp size={18} />

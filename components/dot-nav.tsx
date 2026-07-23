@@ -57,7 +57,7 @@ export default function DotNav({ dict }: { dict: Dictionary['dotNav'] }) {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: 8 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute end-6 whitespace-nowrap px-3 py-1.5 rounded-full text-xs font-semibold glass-card text-[#fafafa] pointer-events-none"
+                  className="absolute end-6 whitespace-nowrap px-3 py-1.5 rounded-full text-xs font-semibold glass-card text-[#eef2fb] pointer-events-none"
                 >
                   {dict[id]}
                 </motion.span>
@@ -73,7 +73,7 @@ export default function DotNav({ dict }: { dict: Dictionary['dotNav'] }) {
               <span
                 className={`rounded-full transition-all duration-300 ${
                   isActive
-                    ? 'w-3 h-3 bg-gradient-to-r from-[#ff5f6d] via-[#a855f7] to-[#ff8a00] shadow-[0_0_12px_rgba(255,95,109,0.7)]'
+                    ? 'w-3 h-3 bg-gradient-to-r from-[#3e7bfa] via-[#8b5cf6] to-[#22d3ee] shadow-[0_0_12px_rgba(62,123,250,0.7)]'
                     : 'w-2 h-2 bg-[rgba(255,255,255,0.25)] group-hover:bg-[rgba(255,255,255,0.5)]'
                 }`}
               />

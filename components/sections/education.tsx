@@ -44,8 +44,8 @@ export default function Education({ dict }: { dict: Dictionary['education'] }) {
                     <h3 className="text-xl font-bold mb-2 font-[family-name:var(--font-space-grotesk)]">
                       {edu.degree}
                     </h3>
-                    <p className="text-[#ff5f6d] font-medium mb-1">{edu.institution}</p>
-                    <div className="flex flex-wrap items-center gap-4 text-[#71717a] text-sm mb-4">
+                    <p className="text-[#3e7bfa] font-medium mb-1">{edu.institution}</p>
+                    <div className="flex flex-wrap items-center gap-4 text-[#5b6478] text-sm mb-4">
                       <span className="flex items-center gap-1">
                         <MapPin size={14} />
                         {edu.location}
@@ -55,14 +55,14 @@ export default function Education({ dict }: { dict: Dictionary['education'] }) {
                         {edu.period}
                       </span>
                     </div>
-                    <p className="text-[#a1a1aa] leading-relaxed mb-4">
+                    <p className="text-[#93a0b8] leading-relaxed mb-4">
                       {edu.description}
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {edu.achievements.map((achievement) => (
                         <span
                           key={achievement}
-                          className="text-xs text-[#a1a1aa] bg-[rgba(255,255,255,0.03)] px-3 py-1 rounded-full border border-[rgba(255,255,255,0.06)]"
+                          className="text-xs text-[#93a0b8] bg-[rgba(255,255,255,0.03)] px-3 py-1 rounded-full border border-[rgba(255,255,255,0.06)]"
                         >
                           {achievement}
                         </span>

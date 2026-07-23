@@ -25,7 +25,7 @@ export default function Contact({ dict }: { dict: Dictionary['contact'] }) {
             {dict.titleLine1}<br />
             <span className="gradient-text">{dict.titleLine2}</span>
           </h2>
-          <p className="text-[#a1a1aa] text-lg max-w-2xl mx-auto text-balance">
+          <p className="text-[#93a0b8] text-lg max-w-2xl mx-auto text-balance">
             {dict.subtitle}
           </p>
         </motion.div>
@@ -80,8 +80,8 @@ export default function Contact({ dict }: { dict: Dictionary['contact'] }) {
                 <h3 className="text-lg font-bold mb-2 font-[family-name:var(--font-space-grotesk)]">
                   {social.label}
                 </h3>
-                <p className="text-[#a1a1aa] text-sm mb-4 break-all">{social.value}</p>
-                <div className="inline-flex items-center gap-1 text-sm text-[#ff5f6d] font-medium group-hover:gap-2 transition-all">
+                <p className="text-[#93a0b8] text-sm mb-4 break-all">{social.value}</p>
+                <div className="inline-flex items-center gap-1 text-sm text-[#3e7bfa] font-medium group-hover:gap-2 transition-all">
                   {dict.connect}
                   <ArrowUpRight size={14} />
                 </div>

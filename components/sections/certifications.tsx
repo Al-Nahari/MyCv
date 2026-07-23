@@ -22,7 +22,7 @@ export default function Certifications({ dict }: { dict: Dictionary['certificati
         >
           <span className="section-label">{dict.label}</span>
           <h2 className="section-title mb-6">{dict.title}</h2>
-          <p className="text-[#a1a1aa] text-lg max-w-2xl">
+          <p className="text-[#93a0b8] text-lg max-w-2xl">
             {dict.subtitle}
           </p>
         </motion.div>
@@ -47,11 +47,11 @@ export default function Certifications({ dict }: { dict: Dictionary['certificati
                     <Award size={24} className="text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-lg font-bold mb-2 font-[family-name:var(--font-space-grotesk)] group-hover:text-[#ff5f6d] transition-colors">
+                    <h3 className="text-lg font-bold mb-2 font-[family-name:var(--font-space-grotesk)] group-hover:text-[#3e7bfa] transition-colors">
                       {cert.title}
                     </h3>
-                    <p className="text-[#ff5f6d] font-medium text-sm mb-2">{cert.issuer}</p>
-                    <div className="flex items-center gap-2 text-[#71717a] text-sm">
+                    <p className="text-[#3e7bfa] font-medium text-sm mb-2">{cert.issuer}</p>
+                    <div className="flex items-center gap-2 text-[#5b6478] text-sm">
                       <Calendar size={14} />
                       {cert.date}
                     </div>
@@ -68,7 +68,7 @@ export default function Certifications({ dict }: { dict: Dictionary['certificati
           transition={{ duration: 0.8, delay: 0.5 }}
           className="mt-16 text-center"
         >
-          <p className="text-[#a1a1aa] mb-6">
+          <p className="text-[#93a0b8] mb-6">
             {dict.ctaText}
           </p>
           <a href="#contact" className="magnetic-btn inline-flex items-center gap-2">

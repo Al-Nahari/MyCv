@@ -21,7 +21,7 @@ export default function Services({ dict }: { dict: Dictionary['services'] }) {
         >
           <span className="section-label">{dict.label}</span>
           <h2 className="section-title mb-6">{dict.title}</h2>
-          <p className="text-[#a1a1aa] text-lg max-w-2xl">
+          <p className="text-[#93a0b8] text-lg max-w-2xl">
             {dict.subtitle}
           </p>
         </motion.div>
@@ -44,7 +44,7 @@ export default function Services({ dict }: { dict: Dictionary['services'] }) {
                 <h3 className="text-xl font-bold mb-3 font-[family-name:var(--font-space-grotesk)]">
                   {service.title}
                 </h3>
-                <p className="text-[#a1a1aa] leading-relaxed">
+                <p className="text-[#93a0b8] leading-relaxed">
                   {service.description}
                 </p>
               </motion.div>

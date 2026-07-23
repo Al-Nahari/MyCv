@@ -27,8 +27,8 @@ export default function LanguageSwitcher({ locale, compact = false }: { locale: 
             aria-current={isActive ? 'true' : undefined}
             className={`px-3 py-1.5 rounded-full font-semibold transition-all duration-300 ${
               isActive
-                ? 'bg-gradient-to-r from-[#ff5f6d] via-[#a855f7] to-[#ff8a00] text-white'
-                : 'text-[#a1a1aa] hover:text-[#fafafa]'
+                ? 'bg-gradient-to-r from-[#3e7bfa] via-[#8b5cf6] to-[#22d3ee] text-white'
+                : 'text-[#93a0b8] hover:text-[#eef2fb]'
             }`}
           >
             {l === 'en' ? 'EN' : 'AR'}

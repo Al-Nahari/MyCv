@@ -21,7 +21,7 @@ export default function About({ dict }: { dict: Dictionary['about'] }) {
         >
           <span className="section-label">{dict.label}</span>
           <h2 className="section-title mb-6">{dict.titleLine1}<br />{dict.titleLine2}</h2>
-          <p className="text-[#a1a1aa] text-lg max-w-3xl leading-relaxed">
+          <p className="text-[#93a0b8] text-lg max-w-3xl leading-relaxed">
             {dict.intro}
           </p>
         </motion.div>
@@ -43,7 +43,7 @@ export default function About({ dict }: { dict: Dictionary['about'] }) {
                 <h3 className="text-xl font-bold mb-3 font-[family-name:var(--font-space-grotesk)]">
                   {item.title}
                 </h3>
-                <p className="text-[#a1a1aa] leading-relaxed">
+                <p className="text-[#93a0b8] leading-relaxed">
                   {item.description}
                 </p>
               </motion.div>
@@ -70,7 +70,7 @@ export default function About({ dict }: { dict: Dictionary['about'] }) {
                 <div className="text-4xl md:text-5xl font-extrabold gradient-text mb-2 font-[family-name:var(--font-space-grotesk)]">
                   {stat.value}
                 </div>
-                <div className="text-[#71717a] text-sm">{stat.label}</div>
+                <div className="text-[#5b6478] text-sm">{stat.label}</div>
               </motion.div>
             ))}
           </div>
